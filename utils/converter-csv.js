@@ -53,7 +53,7 @@ LEITURA DO CSV
 ==========================================================
 */
 fs.createReadStream(arquivoEntrada)
-    .pipe(csv())
+    .pipe(csv({ separator: ";" }))
     .on("data", (linha) => {
         /*
         ======================================================
