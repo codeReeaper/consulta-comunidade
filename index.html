@@ -1,0 +1,117 @@
+<!--
+==========================================================
+
+Projeto: Consulta Comunidade
+
+Arquivo: index.html
+
+Descrição:
+Página principal do sistema de consulta de ligações.
+Aqui o usuário vai pesquisar por matrícula, nome ou hidrômetro
+e visualizar os dados retornados.
+
+Essa página foi pensada para ser simples, rápida e mobile-first.
+
+Autor:
+Victor Trip
+
+Criado em:
+Julho de 2026
+
+==========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+            <!-- Configuração de caracteres -->
+        <meta charset="UTF-8">
+            <!-- Responsividade para celular -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Título da aba do navegador -->
+        <title>Consulta Comunidade</title>
+            <!-- Fonte externa (Poppins) para visual mais moderno -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <!-- Importação da fonte -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+            <!-- CSS principal do sistema -->
+        <link rel="stylesheet" href="css/style.css">
+            <!-- CSS de variáveis (cores, padrões do sistema) -->
+        <link rel="stylesheet" href="css/variables.css">
+            <!-- CSS de responsividade -->
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!-- ======================================================
+            CABEÇALHO DO SISTEMA
+            Responsável por identidade visual e título da página
+        ======================================================= -->
+        <header class="cabecalho">
+                <!-- Título principal do sistema -->
+            <h1 class="titulo-principal">
+                Consulta Comunidade
+            </h1>
+            <!-- Subtítulo explicando o sistema -->
+            <p class="subtitulo">
+                Sistema de consulta de ligações
+            </p>
+        </header>
+        <!-- ======================================================
+            ÁREA PRINCIPAL DO SISTEMA
+            Aqui fica a pesquisa e o resultado
+        ======================================================= -->
+        <main class="conteudo-principal">
+            <!-- ==================================================
+                ÁREA DE PESQUISA
+                Onde o usuário digita matrícula, nome ou hidrômetro
+            =================================================== -->
+            <section class="area-pesquisa">
+                <!-- Input principal de pesquisa -->
+                <input
+                    type="text"
+                    id="input-pesquisa"
+                    class="input-pesquisa"
+                    placeholder="Digite matrícula, nome ou hidrômetro..."
+                    autocomplete="off"
+                >
+                <!-- Texto auxiliar abaixo do input -->
+                <small class="ajuda-pesquisa">
+                    A busca é automática enquanto você digita
+                </small>
+            </section>
+            <!-- ==================================================
+                ÁREA DE RESULTADO
+                Aqui será exibido o card com os dados encontrados
+            =================================================== -->
+            <section
+                id="area-resultado"
+                class="area-resultado">
+                <!-- Estado inicial da tela (sem pesquisa ainda) -->
+                <div class="estado-inicial">
+                    <p class="mensagem-principal">
+                        Nenhuma pesquisa realizada
+                    </p>
+                    <p class="mensagem-secundaria">
+                        Digite uma matrícula, nome ou hidrômetro acima
+                    </p>
+                </div>
+            </section>
+        </main>
+        <!-- ======================================================
+            RODAPÉ DO SISTEMA
+            Informações da versão e identificação do projeto
+        ======================================================= -->
+        <footer class="rodape">
+            <p>
+                Consulta Comunidade • v0.1.0
+            </p>
+        </footer>
+        <!-- ======================================================
+            ARQUIVO PRINCIPAL JAVASCRIPT
+            Aqui o sistema será inicializado e controlado
+        ======================================================= -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
