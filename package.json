@@ -1,0 +1,18 @@
+{
+  "name": "consulta-comunidade",
+  "version": "1.0.0",
+  "description": "Sistema web desenvolvido para auxiliar equipes de campo na consulta de ligações de água.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.2.1"
+  }
+}
