@@ -1,0 +1,38 @@
+/*
+==========================================================
+
+Arquivo: variables.css
+
+Responsável por:
+Centralizar todas as variáveis de cores e padrões do sistema.
+
+Isso facilita manutenção e permite mudar o visual inteiro
+sem mexer no restante do código.
+
+==========================================================
+*/
+:root {
+    /* Fundo principal da aplicação */
+    --cor-fundo: #F4F6F9;
+    /* Branco dos cards */
+    --cor-card: #FFFFFF;
+    /* Cor principal (ações, destaques) */
+    --cor-primaria: #0D6EFD;
+    /* Verde (sucesso / positivo) */
+    --cor-sucesso: #198754;
+    /* Vermelho (erro / alerta) */
+    --cor-erro: #DC3545;
+    /* Cinza para textos secundários */
+    --cor-cinza: #6C757D;
+    /* Cor principal do texto */
+    --cor-texto: #212529;
+    /* Borda leve para elementos */
+    --cor-borda: #DEE2E6;
+    /* Sombra padrão dos cards */
+    --sombra-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Fonte principal do sistema */
+    --fonte-principal: 'Poppins', sans-serif;
+    /* Espaçamento padrão (base do sistema) */
+    --espacamento: 16px;
+
+}
